@@ -33,7 +33,7 @@ export function Task({
           onPauseTimer={() => onPauseTimer(id)}
         />
         <span className="created">
-          {`created ${formatDistanceToNow(timeCreated, {
+          {`created ${formatDistanceToNow(new Date(timeCreated), {
             includeSeconds: true,
           })} ago`}
         </span>

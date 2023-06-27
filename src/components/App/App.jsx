@@ -13,7 +13,7 @@ export function App() {
       id: nanoid(),
       completed: false,
       edit: false,
-      timeCreated: new Date(),
+      timeCreated: new Date(), // почему то undefined при попытке сохранить отредактированую таску
       timeSeconds,
       runTimer: false,
       timerId: null,
